@@ -1,16 +1,45 @@
-# React + Vite
+# React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight personal portfolio built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## What’s included
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Personal profile section with a photo and introduction
+- Projects section with GitHub links
+- Achievements and skills sections
+- Contact cards for email, LinkedIn, and GitHub with icon support
+- Responsive layout using Tailwind CSS utilities
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the app in your browser at the local URL printed by Vite.
+
+## Build
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Notes
+
+- Uses `@tabler/icons-react` for contact icons.
+- Tailwind CSS is configured through `src/App.css` and `tailwind.config.js`.
+- The portfolio is intentionally simple and easy to customize.
