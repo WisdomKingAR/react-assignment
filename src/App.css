@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer components {
+  .page-wrapper {
+    @apply min-h-screen bg-white text-slate-900;
+  }
+
+  .page-inner {
+    @apply mx-auto max-w-4xl px-6 py-8;
+  }
+
+  .page-header {
+    @apply mb-10 flex flex-col items-center gap-6 rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:flex-row md:justify-between md:items-center;
+  }
+
+  .page-title {
+    @apply text-4xl font-bold;
+  }
+
+  .page-subtitle {
+    @apply text-sm text-slate-500 mt-3;
+  }
+
+  .section {
+    @apply space-y-16;
+  }
+
+  .section-block {
+    @apply space-y-4;
+  }
+
+  .section-heading {
+    @apply text-2xl font-semibold;
+  }
+
+  .text-muted {
+    @apply text-slate-600 leading-7;
+  }
+
+  .text-small {
+    @apply text-slate-600 text-sm;
+  }
+
+  .card {
+    @apply rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .grid-2 {
+    @apply grid gap-4 md:grid-cols-2;
+  }
+
+  .grid-3 {
+    @apply grid gap-3 sm:grid-cols-3;
+  }
+
+  .contact-card {
+    @apply rounded-3xl border border-slate-200 bg-white px-4 py-4 text-left transition-shadow;
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+  }
+
+  .contact-card:hover {
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+  }
+
+  .contact-label {
+    @apply text-xs uppercase tracking-[0.2em] text-slate-400;
+  }
+
+  .contact-value {
+    @apply text-slate-900 text-sm mt-2;
+  }
+
+  .contact-note {
+    @apply text-slate-600 text-sm max-w-2xl;
+  }
+
+  .link-small {
+    @apply mt-4 inline-block text-slate-900 underline text-sm;
+  }
+
+  .profile-image {
+    @apply h-28 w-28 rounded-full border border-slate-200 object-cover shadow-md;
+  }
+
+  .footer {
+    @apply border-t border-slate-200 pt-6 text-center text-slate-500 text-xs;
+  }
+
+  .achievement-grid,
+  .skills-grid {
+    @apply grid gap-4 sm:grid-cols-2;
+  }
+
+  .achievement-card,
+  .skill-card {
+    @apply rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .center-text {
+    @apply text-center;
+  }
+
+  .achievement-result {
+    @apply font-semibold text-slate-900 mt-3;
+  }
+
+  .header-text {
+    @apply text-center md:text-left;
+  }
+
+  .paragraph {
+    @apply text-slate-600 leading-7;
+  }
+
+  .paragraph-spaced {
+    @apply text-slate-600 leading-7 mt-4;
+  }
+
+  .card-title,
+  .skill-title {
+    @apply font-bold text-lg;
+  }
+
+  .card-text,
+  .skill-text,
+  .text-small {
+    @apply text-slate-600 text-sm;
+  }
+
+  .skill-text {
+    @apply mt-0;
+  }
+
+  .card-link {
+    @apply mt-4 inline-block text-slate-900 underline text-sm;
+  }
+
+  .span-full {
+    @apply md:col-span-2;
+  }
+
+  .contact-grid {
+    @apply grid gap-3 sm:grid-cols-3;
+  }
+
+  .footer-note {
+    @apply mt-2;
+  }
+}
